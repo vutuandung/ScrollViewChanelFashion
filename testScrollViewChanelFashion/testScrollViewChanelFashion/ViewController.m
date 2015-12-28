@@ -15,6 +15,14 @@
 #define HeightUnSelectedRow         80
 #define BotSelectedRow              280
 
+#define ImageViewTag                1000
+#define LabelTag                    2000
+#define SubLabelTag                 3000
+
+#define ImageViewInView(v)          ((UIImageView *)[v viewWithTag:ImageViewTag])
+#define LabelInView(v)              ((UILabel *)[v viewWithTag:LabelTag])
+#define SubLabelInView(v)           ((UILabel *)[v viewWithTag:SubLabelTag])
+
 @interface ViewController () {
     float oldHeightView0;
     float oldHeightView1;
@@ -22,8 +30,6 @@
     float oldHeightView3;
     NSInteger selectedIndex;
     NSArray *allViews;
-    NSArray *allImageViews;
-    NSArray *allLabels;
     
     NSArray *arrayData;
 }
@@ -51,13 +57,6 @@
                   @"http://media-cdn.tripadvisor.com/media/photo-s/01/5f/fd/59/natural-beauty.jpg",
                   @"http://full.creative.touchtalent.com/natural-beauty-of-mountain-roses-8545.jpg"];
     allViews = @[self.view1, self.view2, self.view3, self.view4, self.view5];
-    allImageViews = @[self.imageView1, self.imageView2, self.imageView3, self.imageView4, self.imageView5];
-    allLabels = @[self.label1, self.label2, self.label3, self.label4, self.label5];
-    
-    for (int i = 0; i < allViews.count; i++) {
-        UIImageView *imageView = allImageViews[i];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:arrayData[i]]];
-    }
     
     [self reloadData];
 }
@@ -216,32 +215,29 @@
     
     if (selectedIndex > 0) {
         NSInteger index = selectedIndex - 1 < 0 ? 0 : selectedIndex - 1;
-        [self.imageView0 sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
-        self.label0.text = [self textAtIndex:index];
+        [ImageViewInView(self.view0) sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
+        LabelInView(self.view0).text = [self textAtIndex:index];
     }
     else {
-        self.imageView0.image = nil;
-        self.label0.text = @"";
+        ImageViewInView(self.view0).image = nil;
+        LabelInView(self.view0).text = @"";
     }
     if (selectedIndex > 1) {
         NSInteger index = selectedIndex - 2 < 0 ? 0 : selectedIndex - 2;
-        [self.imageView_1 sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
-        self.label_1.text = [self textAtIndex:index];
+        [ImageViewInView(self.view_1) sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
+        LabelInView(self.view_1).text = [self textAtIndex:index];
     }
     else {
-        self.imageView_1.image = nil;
-        self.label_1.text = @"";
+        ImageViewInView(self.view_1).image = nil;
+        LabelInView(self.view_1).text = @"";
     }
     for (NSInteger i = 0; i < allViews.count; i++) {
         NSInteger index = i + selectedIndex < arrayData.count ? i + selectedIndex : arrayData.count - 1;
-        UIImageView *imageView = allImageViews[i];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
-        
-        UILabel *label = allLabels[i];
-        label.text = [self textAtIndex:index];
+        [ImageViewInView(allViews[i]) sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
+        LabelInView(allViews[i]).text = [self textAtIndex:index];
     }
     
-    self.labelSub1.text = [self subTextAtIndex:selectedIndex];
+    SubLabelInView(self.view1).text = [self subTextAtIndex:selectedIndex];
 }
 
 - (NSString *) imageUrlAtIndex: (NSInteger) index{

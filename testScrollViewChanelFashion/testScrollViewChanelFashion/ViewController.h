@@ -26,23 +26,5 @@
 @property (nonatomic, weak) IBOutlet UIView *view4;
 @property (nonatomic, weak) IBOutlet UIView *view5;
 
-@property (nonatomic, weak) IBOutlet UIImageView *imageView_1;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView0;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView1;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView2;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView3;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView4;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView5;
-
-@property (nonatomic, weak) IBOutlet UILabel *label_1;
-@property (nonatomic, weak) IBOutlet UILabel *label0;
-@property (nonatomic, weak) IBOutlet UILabel *label1;
-@property (nonatomic, weak) IBOutlet UILabel *label2;
-@property (nonatomic, weak) IBOutlet UILabel *label3;
-@property (nonatomic, weak) IBOutlet UILabel *label4;
-@property (nonatomic, weak) IBOutlet UILabel *label5;
-
-@property (nonatomic, weak) IBOutlet UILabel *labelSub1;
-
 @end
 

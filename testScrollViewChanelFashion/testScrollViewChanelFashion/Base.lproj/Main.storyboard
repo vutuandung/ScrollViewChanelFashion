@@ -23,10 +23,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSr-GZ-M5n">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-U2-dQm">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-U2-dQm">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymq-0r-cVj">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymq-0r-cVj">
                                                 <rect key="frame" x="16" y="-10" width="288" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,10 +48,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-Dq-cKD">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pKB-Yb-nWr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pKB-Yb-nWr">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDl-h0-Eqn">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDl-h0-Eqn">
                                                 <rect key="frame" x="16" y="-10" width="288" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,16 +73,16 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLp-Fc-6Zu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNB-Pz-6yb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNB-Pz-6yb">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now You Can Effectively Get A PS4 For $249.99" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-rj-3R7">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now You Can Effectively Get A PS4 For $249.99" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-rj-3R7">
                                                 <rect key="frame" x="16" y="210" width="288" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h ago by @TheStreet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9z-tQ-HRJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h ago by @TheStreet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9z-tQ-HRJ">
                                                 <rect key="frame" x="16" y="266" width="288" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,10 +107,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52C-Ku-baX">
                                         <rect key="frame" x="0.0" y="300" width="320" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zy8-Yv-3Ti">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zy8-Yv-3Ti">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svq-Bv-QAe">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svq-Bv-QAe">
                                                 <rect key="frame" x="16" y="39" width="288" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,10 +132,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klx-gc-DLA">
                                         <rect key="frame" x="0.0" y="400" width="320" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-tT-Za1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-tT-Za1">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-v7-xUP">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-v7-xUP">
                                                 <rect key="frame" x="16" y="40" width="288" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,10 +157,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZZ-xy-UED">
                                         <rect key="frame" x="0.0" y="500" width="320" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eA7-lX-aQd">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eA7-lX-aQd">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="863-qO-zJr">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="863-qO-zJr">
                                                 <rect key="frame" x="16" y="40" width="288" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,10 +182,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8l6-2g-aW0">
                                         <rect key="frame" x="0.0" y="600" width="320" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-7l-X6i">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-7l-X6i">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbN-3t-haV">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbN-3t-haV">
                                                 <rect key="frame" x="16" y="40" width="288" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,21 +252,6 @@
                         <outlet property="contraintHeightView4" destination="94g-qR-7HH" id="0ig-wI-WAc"/>
                         <outlet property="contraintHeightView5" destination="WQM-jc-2Bg" id="CWd-l9-VnN"/>
                         <outlet property="contraintHeightView_1" destination="MBB-zN-Ajr" id="Jhn-Pr-meF"/>
-                        <outlet property="imageView0" destination="pKB-Yb-nWr" id="Iit-PW-wO9"/>
-                        <outlet property="imageView1" destination="uNB-Pz-6yb" id="VWz-f8-dwA"/>
-                        <outlet property="imageView2" destination="zy8-Yv-3Ti" id="RSf-wQ-F8Y"/>
-                        <outlet property="imageView3" destination="v3M-tT-Za1" id="7Yy-fc-H00"/>
-                        <outlet property="imageView4" destination="eA7-lX-aQd" id="roD-gf-vs4"/>
-                        <outlet property="imageView5" destination="7Mw-7l-X6i" id="MHu-Wg-Qv4"/>
-                        <outlet property="imageView_1" destination="sjL-U2-dQm" id="0vz-zM-ok2"/>
-                        <outlet property="label0" destination="VDl-h0-Eqn" id="Ru6-xD-Jhn"/>
-                        <outlet property="label1" destination="NQ1-rj-3R7" id="IeC-9E-y70"/>
-                        <outlet property="label2" destination="Svq-Bv-QAe" id="TfV-fz-767"/>
-                        <outlet property="label3" destination="vZp-v7-xUP" id="EKz-Bx-F4S"/>
-                        <outlet property="label4" destination="863-qO-zJr" id="GYd-e9-LWt"/>
-                        <outlet property="label5" destination="wbN-3t-haV" id="VJB-at-c4F"/>
-                        <outlet property="labelSub1" destination="q9z-tQ-HRJ" id="jNP-pT-cnu"/>
-                        <outlet property="label_1" destination="Ymq-0r-cVj" id="l5w-hG-Q72"/>
                         <outlet property="view0" destination="GXR-Dq-cKD" id="p5L-sm-8mj"/>
                         <outlet property="view1" destination="aLp-Fc-6Zu" id="rYd-4S-8W2"/>
                         <outlet property="view2" destination="52C-Ku-baX" id="dCs-lQ-m0q"/>
