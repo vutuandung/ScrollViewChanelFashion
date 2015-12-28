@@ -232,6 +232,7 @@
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="MN0-mZ-leV" appends="YES" id="J04-2D-0WV"/>
+                                    <outletCollection property="gestureRecognizers" destination="k26-aS-YjP" appends="YES" id="3GX-8B-i8H"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -267,6 +268,11 @@
                         <action selector="move:" destination="BYZ-38-t0r" id="tPb-IW-yHg"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="k26-aS-YjP">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="gNH-8w-i67"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

@@ -68,9 +68,9 @@
 
 #pragma mark - Private methods
 
--(IBAction)move:(id)sender {
-    [self.view bringSubviewToFront:[(UIPanGestureRecognizer*)sender view]];
-    CGPoint translatedPoint = [(UIPanGestureRecognizer*)sender translationInView:self.view];
+-(IBAction)move:(UIPanGestureRecognizer *)sender {
+    [self.view bringSubviewToFront:[sender view]];
+    CGPoint translatedPoint = [sender translationInView:self.view];
     static BOOL isScrollDown2Rows = NO;
     static BOOL isScrollUp2Rows = NO;
     
@@ -83,10 +83,7 @@
         [self updateViews];
     }
     else if ([(UIPanGestureRecognizer*)sender state] == UIGestureRecognizerStateChanged) {
-        NSLog(@"%@", NSStringFromCGPoint(translatedPoint));
-        if (translatedPoint.y + HeightUnSelectedRow > SCREEN_HEIGHT - BotSelectedRow) {
-            NSLog(@"xxx");
-        }
+//        NSLog(@"%@", NSStringFromCGPoint(translatedPoint));
         if (translatedPoint.y < 0) { // scroll DOWN
             if (selectedIndex < arrayData.count - 1) {
                 self.contraintHeightView1.constant = oldHeightView1 + translatedPoint.y;
@@ -199,6 +196,22 @@
     }
 }
 
+-(IBAction)tap:(UITapGestureRecognizer *)sender {
+    CGPoint point = [sender locationInView:sender.view];
+//    NSLog(@"%@", NSStringFromCGPoint(point));
+    
+    NSInteger index = -1;
+    for (int i = 0; i < allViews.count; i++) {
+        if (CGRectContainsPoint(((UIView *)allViews[i]).frame, point)) {
+            index = i + selectedIndex;
+        }
+    }
+    
+    if (index >= 0 && index < arrayData.count) {
+        [self didTapAtIndex:index];
+    }
+}
+
 - (void) updateViews{
     for (int i = 1; i < allViews.count; i++) {
         if (i + selectedIndex >= arrayData.count) {
@@ -211,7 +224,7 @@
 }
 
 - (void) reloadData{
-    NSLog(@"%ld", (long) selectedIndex);
+//    NSLog(@"%ld", (long) selectedIndex);
     
     if (selectedIndex > 0) {
         NSInteger index = selectedIndex - 1 < 0 ? 0 : selectedIndex - 1;
@@ -240,6 +253,8 @@
     SubLabelInView(self.view1).text = [self subTextAtIndex:selectedIndex];
 }
 
+#pragma mark - Override methods
+
 - (NSString *) imageUrlAtIndex: (NSInteger) index{
     if (index < 0 || index >= arrayData.count) {
         return @"";
@@ -259,6 +274,10 @@
         return @"";
     }
     return arrayData[index];
+}
+
+- (void) didTapAtIndex: (NSInteger) index{
+    NSLog(@"%ld", index);
 }
 
 @end
