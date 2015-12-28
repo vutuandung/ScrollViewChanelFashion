@@ -26,14 +26,23 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-U2-dQm">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymq-0r-cVj">
+                                                <rect key="frame" x="16" y="-10" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="Ymq-0r-cVj" firstAttribute="centerX" secondItem="HSr-GZ-M5n" secondAttribute="centerX" id="4qj-n5-INa"/>
                                             <constraint firstAttribute="bottom" secondItem="sjL-U2-dQm" secondAttribute="bottom" id="7gw-xc-h1W"/>
                                             <constraint firstAttribute="trailing" secondItem="sjL-U2-dQm" secondAttribute="trailing" id="J6Q-VS-S6O"/>
                                             <constraint firstAttribute="height" id="MBB-zN-Ajr"/>
                                             <constraint firstItem="sjL-U2-dQm" firstAttribute="leading" secondItem="HSr-GZ-M5n" secondAttribute="leading" id="mPV-dI-Vlq"/>
+                                            <constraint firstItem="Ymq-0r-cVj" firstAttribute="centerY" secondItem="HSr-GZ-M5n" secondAttribute="centerY" id="xBC-AA-ezY"/>
                                             <constraint firstItem="sjL-U2-dQm" firstAttribute="top" secondItem="HSr-GZ-M5n" secondAttribute="top" id="yxo-gA-LwD"/>
+                                            <constraint firstItem="Ymq-0r-cVj" firstAttribute="leading" secondItem="HSr-GZ-M5n" secondAttribute="leading" constant="16" id="zIZ-7X-a6L"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-Dq-cKD">
@@ -42,12 +51,21 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pKB-Yb-nWr">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDl-h0-Eqn">
+                                                <rect key="frame" x="16" y="-10" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="pKB-Yb-nWr" firstAttribute="leading" secondItem="GXR-Dq-cKD" secondAttribute="leading" id="1V1-qX-m3A"/>
+                                            <constraint firstItem="VDl-h0-Eqn" firstAttribute="centerY" secondItem="GXR-Dq-cKD" secondAttribute="centerY" id="BGn-pq-UAC"/>
                                             <constraint firstAttribute="height" id="Dht-ZU-ugm"/>
                                             <constraint firstItem="pKB-Yb-nWr" firstAttribute="top" secondItem="GXR-Dq-cKD" secondAttribute="top" id="V1a-p6-b87"/>
+                                            <constraint firstItem="VDl-h0-Eqn" firstAttribute="centerX" secondItem="GXR-Dq-cKD" secondAttribute="centerX" id="e7P-gp-uYL"/>
+                                            <constraint firstItem="VDl-h0-Eqn" firstAttribute="leading" secondItem="GXR-Dq-cKD" secondAttribute="leading" constant="16" id="f29-xE-tNe"/>
                                             <constraint firstAttribute="bottom" secondItem="pKB-Yb-nWr" secondAttribute="bottom" id="p2y-1O-ZUb"/>
                                             <constraint firstAttribute="trailing" secondItem="pKB-Yb-nWr" secondAttribute="trailing" id="twG-sM-ApA"/>
                                         </constraints>
@@ -58,14 +76,32 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNB-Pz-6yb">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now You Can Effectively Get A PS4 For $249.99" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-rj-3R7">
+                                                <rect key="frame" x="16" y="210" width="288" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h ago by @TheStreet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9z-tQ-HRJ">
+                                                <rect key="frame" x="16" y="266" width="288" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="NQ1-rj-3R7" firstAttribute="leading" secondItem="q9z-tQ-HRJ" secondAttribute="leading" id="4V7-Al-dyE"/>
                                             <constraint firstItem="uNB-Pz-6yb" firstAttribute="leading" secondItem="aLp-Fc-6Zu" secondAttribute="leading" id="FY8-8u-sYZ"/>
                                             <constraint firstAttribute="height" constant="300" id="JMF-KR-McB"/>
                                             <constraint firstItem="uNB-Pz-6yb" firstAttribute="top" secondItem="aLp-Fc-6Zu" secondAttribute="top" id="Lys-79-FdF"/>
+                                            <constraint firstItem="q9z-tQ-HRJ" firstAttribute="leading" secondItem="aLp-Fc-6Zu" secondAttribute="leading" constant="16" id="QcA-vu-iNo"/>
+                                            <constraint firstAttribute="bottom" secondItem="q9z-tQ-HRJ" secondAttribute="bottom" constant="16" id="Qik-sO-qON"/>
                                             <constraint firstAttribute="bottom" secondItem="uNB-Pz-6yb" secondAttribute="bottom" id="Ri3-xW-xeu"/>
                                             <constraint firstAttribute="trailing" secondItem="uNB-Pz-6yb" secondAttribute="trailing" id="adn-tu-hro"/>
+                                            <constraint firstItem="q9z-tQ-HRJ" firstAttribute="centerX" secondItem="aLp-Fc-6Zu" secondAttribute="centerX" id="r5t-Wm-fdU"/>
+                                            <constraint firstItem="q9z-tQ-HRJ" firstAttribute="top" secondItem="NQ1-rj-3R7" secondAttribute="bottom" constant="8" id="raK-zr-hjL"/>
+                                            <constraint firstItem="NQ1-rj-3R7" firstAttribute="trailing" secondItem="q9z-tQ-HRJ" secondAttribute="trailing" id="t1a-4U-bWq"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52C-Ku-baX">
@@ -74,14 +110,23 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zy8-Yv-3Ti">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svq-Bv-QAe">
+                                                <rect key="frame" x="16" y="39" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="zy8-Yv-3Ti" firstAttribute="leading" secondItem="52C-Ku-baX" secondAttribute="leading" id="AMd-al-feG"/>
+                                            <constraint firstItem="Svq-Bv-QAe" firstAttribute="leading" secondItem="52C-Ku-baX" secondAttribute="leading" constant="16" id="D37-l4-RmV"/>
                                             <constraint firstAttribute="bottom" secondItem="zy8-Yv-3Ti" secondAttribute="bottom" id="VxZ-Xg-68v"/>
                                             <constraint firstAttribute="height" constant="100" id="ZRg-D6-bTk"/>
                                             <constraint firstAttribute="trailing" secondItem="zy8-Yv-3Ti" secondAttribute="trailing" id="e04-J2-nSx"/>
+                                            <constraint firstItem="Svq-Bv-QAe" firstAttribute="centerY" secondItem="52C-Ku-baX" secondAttribute="centerY" id="nus-Eg-aIi"/>
                                             <constraint firstItem="zy8-Yv-3Ti" firstAttribute="top" secondItem="52C-Ku-baX" secondAttribute="top" id="qMa-bf-zB4"/>
+                                            <constraint firstItem="Svq-Bv-QAe" firstAttribute="centerX" secondItem="52C-Ku-baX" secondAttribute="centerX" id="u4k-a5-sdf"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klx-gc-DLA">
@@ -90,9 +135,18 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-tT-Za1">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-v7-xUP">
+                                                <rect key="frame" x="16" y="40" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="vZp-v7-xUP" firstAttribute="leading" secondItem="klx-gc-DLA" secondAttribute="leading" constant="16" id="Eqw-Au-FUQ"/>
+                                            <constraint firstItem="vZp-v7-xUP" firstAttribute="centerY" secondItem="klx-gc-DLA" secondAttribute="centerY" id="J3f-Ud-oa3"/>
+                                            <constraint firstItem="vZp-v7-xUP" firstAttribute="centerX" secondItem="klx-gc-DLA" secondAttribute="centerX" id="Q9E-yA-Oyl"/>
                                             <constraint firstAttribute="trailing" secondItem="v3M-tT-Za1" secondAttribute="trailing" id="VVK-KJ-Daa"/>
                                             <constraint firstAttribute="bottom" secondItem="v3M-tT-Za1" secondAttribute="bottom" id="clF-57-nBT"/>
                                             <constraint firstItem="v3M-tT-Za1" firstAttribute="top" secondItem="klx-gc-DLA" secondAttribute="top" id="fFE-zS-gsL"/>
@@ -106,13 +160,22 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eA7-lX-aQd">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="863-qO-zJr">
+                                                <rect key="frame" x="16" y="40" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="94g-qR-7HH"/>
+                                            <constraint firstItem="863-qO-zJr" firstAttribute="centerY" secondItem="gZZ-xy-UED" secondAttribute="centerY" id="IBk-vd-wVY"/>
                                             <constraint firstItem="eA7-lX-aQd" firstAttribute="leading" secondItem="gZZ-xy-UED" secondAttribute="leading" id="OGX-CX-jV6"/>
                                             <constraint firstAttribute="bottom" secondItem="eA7-lX-aQd" secondAttribute="bottom" id="Tgh-kq-lYZ"/>
                                             <constraint firstItem="eA7-lX-aQd" firstAttribute="top" secondItem="gZZ-xy-UED" secondAttribute="top" id="Yc7-pl-CWN"/>
+                                            <constraint firstItem="863-qO-zJr" firstAttribute="leading" secondItem="gZZ-xy-UED" secondAttribute="leading" constant="16" id="iu8-ln-k1u"/>
+                                            <constraint firstItem="863-qO-zJr" firstAttribute="centerX" secondItem="gZZ-xy-UED" secondAttribute="centerX" id="jYD-Wd-33g"/>
                                             <constraint firstAttribute="trailing" secondItem="eA7-lX-aQd" secondAttribute="trailing" id="uJ0-wn-lcN"/>
                                         </constraints>
                                     </view>
@@ -122,11 +185,20 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-7l-X6i">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These 2 CEOs make Mark Zuck..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbN-3t-haV">
+                                                <rect key="frame" x="16" y="40" width="288" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="wbN-3t-haV" firstAttribute="leading" secondItem="8l6-2g-aW0" secondAttribute="leading" constant="16" id="AOo-xD-PAD"/>
+                                            <constraint firstItem="wbN-3t-haV" firstAttribute="centerY" secondItem="8l6-2g-aW0" secondAttribute="centerY" id="PNZ-ti-mxp"/>
                                             <constraint firstAttribute="height" constant="100" id="WQM-jc-2Bg"/>
                                             <constraint firstItem="7Mw-7l-X6i" firstAttribute="top" secondItem="8l6-2g-aW0" secondAttribute="top" id="cDx-dr-HVp"/>
+                                            <constraint firstItem="wbN-3t-haV" firstAttribute="centerX" secondItem="8l6-2g-aW0" secondAttribute="centerX" id="mkS-U3-BM6"/>
                                             <constraint firstAttribute="trailing" secondItem="7Mw-7l-X6i" secondAttribute="trailing" id="nnM-UO-KNn"/>
                                             <constraint firstItem="7Mw-7l-X6i" firstAttribute="leading" secondItem="8l6-2g-aW0" secondAttribute="leading" id="rKf-Ow-o1A"/>
                                             <constraint firstAttribute="bottom" secondItem="7Mw-7l-X6i" secondAttribute="bottom" id="siu-BU-WR7"/>
@@ -187,6 +259,14 @@
                         <outlet property="imageView4" destination="eA7-lX-aQd" id="roD-gf-vs4"/>
                         <outlet property="imageView5" destination="7Mw-7l-X6i" id="MHu-Wg-Qv4"/>
                         <outlet property="imageView_1" destination="sjL-U2-dQm" id="0vz-zM-ok2"/>
+                        <outlet property="label0" destination="VDl-h0-Eqn" id="Ru6-xD-Jhn"/>
+                        <outlet property="label1" destination="NQ1-rj-3R7" id="IeC-9E-y70"/>
+                        <outlet property="label2" destination="Svq-Bv-QAe" id="TfV-fz-767"/>
+                        <outlet property="label3" destination="vZp-v7-xUP" id="EKz-Bx-F4S"/>
+                        <outlet property="label4" destination="863-qO-zJr" id="GYd-e9-LWt"/>
+                        <outlet property="label5" destination="wbN-3t-haV" id="VJB-at-c4F"/>
+                        <outlet property="labelSub1" destination="q9z-tQ-HRJ" id="jNP-pT-cnu"/>
+                        <outlet property="label_1" destination="Ymq-0r-cVj" id="l5w-hG-Q72"/>
                         <outlet property="view0" destination="GXR-Dq-cKD" id="p5L-sm-8mj"/>
                         <outlet property="view1" destination="aLp-Fc-6Zu" id="rYd-4S-8W2"/>
                         <outlet property="view2" destination="52C-Ku-baX" id="dCs-lQ-m0q"/>

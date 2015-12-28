@@ -23,6 +23,7 @@
     NSInteger selectedIndex;
     NSArray *allViews;
     NSArray *allImageViews;
+    NSArray *allLabels;
     
     NSArray *arrayData;
 }
@@ -51,17 +52,22 @@
                   @"http://full.creative.touchtalent.com/natural-beauty-of-mountain-roses-8545.jpg"];
     allViews = @[self.view1, self.view2, self.view3, self.view4, self.view5];
     allImageViews = @[self.imageView1, self.imageView2, self.imageView3, self.imageView4, self.imageView5];
+    allLabels = @[self.label1, self.label2, self.label3, self.label4, self.label5];
     
     for (int i = 0; i < allViews.count; i++) {
         UIImageView *imageView = allImageViews[i];
         [imageView sd_setImageWithURL:[NSURL URLWithString:arrayData[i]]];
     }
+    
+    [self reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Private methods
 
 -(IBAction)move:(id)sender {
     [self.view bringSubviewToFront:[(UIPanGestureRecognizer*)sender view]];
@@ -194,28 +200,6 @@
     }
 }
 
-- (void) reloadData{
-    NSLog(@"%ld", (long) selectedIndex);
-    
-    if (selectedIndex > 0) {
-        [self.imageView0 sd_setImageWithURL:[NSURL URLWithString:arrayData[(selectedIndex - 1 < 0 ? 0 : selectedIndex - 1)]]];
-    }
-    else {
-        self.imageView0.image = nil;
-    }
-    if (selectedIndex > 1) {
-        [self.imageView_1 sd_setImageWithURL:[NSURL URLWithString:arrayData[(selectedIndex - 2 < 0 ? 0 : selectedIndex - 2)]]];
-    }
-    else {
-        self.imageView_1.image = nil;
-    }
-    for (NSInteger i = 0; i < allViews.count; i++) {
-        NSInteger index = i + selectedIndex < arrayData.count ? i + selectedIndex : arrayData.count - 1;
-        UIImageView *imageView = allImageViews[i];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:arrayData[index]]];
-    }
-}
-
 - (void) updateViews{
     for (int i = 1; i < allViews.count; i++) {
         if (i + selectedIndex >= arrayData.count) {
@@ -225,6 +209,60 @@
             ((UIView *)allViews[i]).hidden = NO;
         }
     }
+}
+
+- (void) reloadData{
+    NSLog(@"%ld", (long) selectedIndex);
+    
+    if (selectedIndex > 0) {
+        NSInteger index = selectedIndex - 1 < 0 ? 0 : selectedIndex - 1;
+        [self.imageView0 sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
+        self.label0.text = [self textAtIndex:index];
+    }
+    else {
+        self.imageView0.image = nil;
+        self.label0.text = @"";
+    }
+    if (selectedIndex > 1) {
+        NSInteger index = selectedIndex - 2 < 0 ? 0 : selectedIndex - 2;
+        [self.imageView_1 sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
+        self.label_1.text = [self textAtIndex:index];
+    }
+    else {
+        self.imageView_1.image = nil;
+        self.label_1.text = @"";
+    }
+    for (NSInteger i = 0; i < allViews.count; i++) {
+        NSInteger index = i + selectedIndex < arrayData.count ? i + selectedIndex : arrayData.count - 1;
+        UIImageView *imageView = allImageViews[i];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[self imageUrlAtIndex:index]]];
+        
+        UILabel *label = allLabels[i];
+        label.text = [self textAtIndex:index];
+    }
+    
+    self.labelSub1.text = [self subTextAtIndex:selectedIndex];
+}
+
+- (NSString *) imageUrlAtIndex: (NSInteger) index{
+    if (index < 0 || index >= arrayData.count) {
+        return @"";
+    }
+    return arrayData[index];
+}
+
+- (NSString *) textAtIndex: (NSInteger) index{
+    if (index < 0 || index >= arrayData.count) {
+        return @"";
+    }
+    return arrayData[index];
+}
+
+- (NSString *) subTextAtIndex: (NSInteger) index{
+    if (index < 0 || index >= arrayData.count) {
+        return @"";
+    }
+    return arrayData[index];
 }
 
 @end
