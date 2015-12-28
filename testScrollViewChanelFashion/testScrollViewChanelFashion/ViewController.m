@@ -180,7 +180,7 @@
                 } else {
                     selectedIndex--;
                 }
-                isScrollDown2Rows = NO;
+                isScrollUp2Rows = NO;
                 [self reloadData];
             }
             [self updateViews];
