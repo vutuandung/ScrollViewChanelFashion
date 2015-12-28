@@ -36,7 +36,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.contraintHeightView1.constant = SCREEN_HEIGHT - BotSelectedRow;
-//    arrayData = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8"];
     arrayData = @[@"http://stuffpoint.com/nature/image/371042-nature-autumns-natural-beauty.jpg",
                   @"https://s-media-cache-ak0.pinimg.com/736x/60/b7/01/60b7019827cf8f7affd921f02793adf0.jpg",
                   @"http://www.bluesunhotels.com/EasyEdit/UserFiles/PageImages/natural-beauty-of-croatia/natural-beauty-of-croatia-635350572813900157-5_570_320.jpeg",
@@ -50,7 +49,6 @@
     
     for (int i = 0; i < allViews.count; i++) {
         UIImageView *imageView = allImageViews[i];
-//        imageView.image= [UIImage imageNamed:arrayData[i]];
         [imageView sd_setImageWithURL:[NSURL URLWithString:arrayData[i]]];
     }
 }
@@ -192,17 +190,15 @@
 }
 
 - (void) reloadData{
-    NSLog(@"%ld", selectedIndex);
+    NSLog(@"%ld", (long) selectedIndex);
     
     if (selectedIndex > 0) {
-//        self.imageView0.image= [UIImage imageNamed:arrayData[(selectedIndex - 1 < 0 ? 0 : selectedIndex - 1)]];
         [self.imageView0 sd_setImageWithURL:[NSURL URLWithString:arrayData[(selectedIndex - 1 < 0 ? 0 : selectedIndex - 1)]]];
     }
     else {
         self.imageView0.image = nil;
     }
     if (selectedIndex > 1) {
-//        self.imageView_1.image= [UIImage imageNamed:arrayData[(selectedIndex - 2 < 0 ? 0 : selectedIndex - 2)]];
         [self.imageView_1 sd_setImageWithURL:[NSURL URLWithString:arrayData[(selectedIndex - 2 < 0 ? 0 : selectedIndex - 2)]]];
     }
     else {
@@ -211,8 +207,6 @@
     for (NSInteger i = 0; i < allViews.count; i++) {
         NSInteger index = i + selectedIndex < arrayData.count ? i + selectedIndex : arrayData.count - 1;
         UIImageView *imageView = allImageViews[i];
-//        imageView.image= [UIImage imageNamed:arrayData[index]];
-        
         [imageView sd_setImageWithURL:[NSURL URLWithString:arrayData[index]]];
     }
 }
