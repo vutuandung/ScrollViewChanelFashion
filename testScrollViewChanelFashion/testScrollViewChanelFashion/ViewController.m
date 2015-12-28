@@ -12,8 +12,8 @@
 #define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
 
-#define HeightUnSelectedRow         100
-#define BotSelectedRow              270
+#define HeightUnSelectedRow         80
+#define BotSelectedRow              280
 
 @interface ViewController () {
     float oldHeightView0;
@@ -36,6 +36,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.contraintHeightView1.constant = SCREEN_HEIGHT - BotSelectedRow;
+    self.contraintHeightView2.constant = HeightUnSelectedRow;
+    self.contraintHeightView3.constant = HeightUnSelectedRow;
+    self.contraintHeightView4.constant = HeightUnSelectedRow;
+    self.contraintHeightView5.constant = HeightUnSelectedRow;
+    
     arrayData = @[@"http://stuffpoint.com/nature/image/371042-nature-autumns-natural-beauty.jpg",
                   @"https://s-media-cache-ak0.pinimg.com/736x/60/b7/01/60b7019827cf8f7affd921f02793adf0.jpg",
                   @"http://www.bluesunhotels.com/EasyEdit/UserFiles/PageImages/natural-beauty-of-croatia/natural-beauty-of-croatia-635350572813900157-5_570_320.jpeg",

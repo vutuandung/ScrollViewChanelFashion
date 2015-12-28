@@ -177,6 +177,8 @@
                         <outlet property="contraintHeightView1" destination="JMF-KR-McB" id="qhC-v5-80Y"/>
                         <outlet property="contraintHeightView2" destination="ZRg-D6-bTk" id="D7s-Xc-wmg"/>
                         <outlet property="contraintHeightView3" destination="scK-lh-bOa" id="Wd4-yH-m2n"/>
+                        <outlet property="contraintHeightView4" destination="94g-qR-7HH" id="0ig-wI-WAc"/>
+                        <outlet property="contraintHeightView5" destination="WQM-jc-2Bg" id="CWd-l9-VnN"/>
                         <outlet property="contraintHeightView_1" destination="MBB-zN-Ajr" id="Jhn-Pr-meF"/>
                         <outlet property="imageView0" destination="pKB-Yb-nWr" id="Iit-PW-wO9"/>
                         <outlet property="imageView1" destination="uNB-Pz-6yb" id="VWz-f8-dwA"/>

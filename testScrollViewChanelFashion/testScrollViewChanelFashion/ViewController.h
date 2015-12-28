@@ -15,6 +15,8 @@
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *contraintHeightView1;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *contraintHeightView2;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *contraintHeightView3;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *contraintHeightView4;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *contraintHeightView5;
 
 @property (nonatomic, weak) IBOutlet UIView *view_1;
 @property (nonatomic, weak) IBOutlet UIView *view0;
